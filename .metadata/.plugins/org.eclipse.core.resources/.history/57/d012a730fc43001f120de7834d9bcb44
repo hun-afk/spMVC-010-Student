@@ -1,0 +1,28 @@
+package com.callor.student.persistance;
+
+import java.util.List;
+
+import org.apache.ibatis.annotations.Select;
+
+import com.callor.student.models.StudentVO;
+
+public interface StudentDao {
+	
+	@Select("SELECT * FROM tb1_student ORDER BY st_num")
+	public List<StudentVO> selectAll();
+	
+	@Select("SELECT * FROM tb1_student WHERE st_num = #{st_num}")
+	public StudentVO findById(String st_num);
+	
+	@Select("SELECT * FROM tb1_student WHERE st_tel = #{st_tel}")
+	public List<StudentVO> findByTel(String st_tel);
+	
+	@Select("SELECT * FROM tb1_student WHERE st_name = #{st_name}")
+	public List<StudentVO> findByName(String st_name);
+	
+	public int update(StudentVO stVo);
+	public int insert(StudentVO stVO);
+	
+	@Select("DELECT FROM tb1_student WHERE st_num = #{st_num}")
+	public int delete(String st_num);
+}

@@ -1,0 +1,5 @@
+package com.caller.student.models;
+
+public class StudentVo {
+
+}

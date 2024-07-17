@@ -1,0 +1,16 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>학생관리시스템</title>
+    <link href="/student/static/css/main.css" rel="stylesheet"/>
+    <script src="/student/static/js/main.js"/>
+  </head>
+  <body>
+  	<header>
+  		<h1>학생관리 시스템 2024</h1>
+  		<p>나라고등학교 학생관리 시스템</p>
+  	</header>
+  </body>
+</html>
